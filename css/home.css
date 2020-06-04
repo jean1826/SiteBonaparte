@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 mai 2020, 11:12:21
+    Author     : Laurane
+*/
+#gauche img , #droite img {
+   
+     
+    border-width:5px ;
+    border-style:dotted;
+    border-color:yellow;
+   
+}
+
+#gauche
+{
+    float:left;
+}
+
+#milieu
+{
+    float:left;
+    margin-left:30px;
+    margin-right:30px;
+    overflow-y:scroll;
+    height:560px;
+    width: 600px;
+    
+} 
+
+section
+{
+    text-align:center;
+    
+}
+
+
+body{
+  
+   background: lightblue ;
+ 
+}
+
+article{
+    width:1260px;
+    margin:auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #EFD807;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0000FF;
+}
+
+#milieu img {
+  width: 590px;
+ 
+  -webkit-filter: grayscale(0) blur(0px);
+  filter: grayscale(0) blur(0px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+#milieu img:hover {
+  width: 590px;
+ 
+  border-radius: 50%;  
+ 
+}
+
+#gauche img:hover , #droite img:hover
+{
+    
+    border-width:5px ;
+    border-style:dotted;
+    border-color:black;
+    
+}
+
+@media screen and (max-width: 576px) {
+  #gauche, #droite{
+    display:none;
+  }
+
+  #milieu img {
+    width:100%;
+  }
+
+  #milieu img:hover {
+    width: 100%;
+  }
+
+  article{
+    width: 100%;
+  }
+
+  #milieu {
+    width: 100%;
+    margin:0;
+    overflow-y:hidden;
+    height: auto;
+  }
+
+  #milieu video{
+    width: 100%;
+  }
+}

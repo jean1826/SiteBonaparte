@@ -1,0 +1,15 @@
+#images {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-wrap: wrap; /* Les éléments flexibles sont disposés sur plusieurs lignes */
+    justify-content: flex-start; /* Les éléments sont répartis équitablement sur la ligne */
+    margin-bottom: 45px; /* Marge inférieure */
+}
+
+images images img {
+    margin-left: 6px; /* Marge gauche */
+}
+
+#images images:hover {
+    border: #bbb thin solid; /* Bordure au survol */
+}
+
